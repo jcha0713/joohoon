@@ -1,0 +1,15 @@
+{
+  "name": "joohoon",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Joohoon's personal name card",
+  "main": "./bin/card.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joohoon Cha <joocha0713@gmail.com> (https://jhcha.app)",
+  "license": "MIT",
+  "devDependencies": {
+    "boxen": "^7.0.0"
+  }
+}
