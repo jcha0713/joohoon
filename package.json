@@ -1,11 +1,11 @@
 {
   "name": "joohoon",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Joohoon's personal name card",
   "main": "./bin/card.js",
   "bin": {
-    "joohoon": "./bin/card.js"
+    "card": "./bin/card.js"
   },
   "scripts": {
     "start": "node ./bin/card.js"
