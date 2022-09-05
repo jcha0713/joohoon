@@ -11,6 +11,10 @@
     "start": "node ./bin/card.js"
   },
   "author": "Joohoon Cha <joocha0713@gmail.com> (https://jhcha.app)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcha0713/joohoon-name-card"
+  },
   "license": "MIT",
   "files": [
     "bin/card.js",
