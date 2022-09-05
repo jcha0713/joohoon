@@ -1,13 +1,11 @@
-import * as url from "url";
+import fs from "fs";
 import chalk from "chalk";
 import boxen from "boxen";
-import fs from "fs";
-import path from "path";
-// inquirer
+import * as url from "url";
 
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
-const info = {
+export const info = {
   name: "Joohoon Cha",
   position: "Front-End Engineer",
   location: "Seattle, WA",
@@ -20,7 +18,7 @@ const info = {
 };
 
 const boxenOption = {
-  padding: { top: 2, right: 10, bottom: 2, left: 10 },
+  padding: { top: 3, right: 10, bottom: 3, left: 10 },
   margin: 1,
   // float: "center",
   borderColor: "blue",
@@ -60,4 +58,4 @@ const content = `  ${insturction.name}
 
 const card = boxen(content, boxenOption);
 
-fs.writeFileSync(path.join(__dirname, "bin/card"), card);
+fs.writeFileSync(`${__dirname}bin/card`, card);
