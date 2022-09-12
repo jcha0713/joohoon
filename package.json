@@ -1,9 +1,11 @@
 {
   "name": "joohoon",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Joohoon's personal name card",
   "main": "./bin/card.js",
-  "bin": "./bin/card.js",
+  "bin": {
+    "joohoon": "./bin/card.js"
+  },
   "scripts": {
     "start": "node ./bin/card.js",
     "build": "node ./build.mjs"
@@ -18,16 +20,15 @@
     "bin/card.js",
     "bin/card"
   ],
-  "devDependencies": {
-    "boxen": "^7.0.0",
-    "chalk": "^4.1.2",
-    "inquirer": "^8.2.4",
-    "open": "^8.4.0"
-  },
   "keywords": [
     "card",
     "namecard",
     "npx card",
     "business card"
-  ]
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.4",
+    "open": "^8.4.0"
+  }
 }
