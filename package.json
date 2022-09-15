@@ -1,6 +1,6 @@
 {
   "name": "joohoon",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Joohoon's personal name card",
   "main": "./bin/card.js",
   "bin": {

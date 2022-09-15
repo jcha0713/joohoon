@@ -49,6 +49,13 @@ const getQuestions = async () => {
 };
 
 const displayPrompt = async () => {
+  const readline = require("readline");
+  readline.emitKeypressEvents(process.stdin);
+  process.stdin.on("keypress", (str) => {
+    if (str === "q") {
+      process.exit();
+    }
+  });
   prompt(await getQuestions())
     .then((answer) => {
       answer.open();
